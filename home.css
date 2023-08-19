@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main-page {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1em;
+}
+.header-logo {
+  padding-left: 1em;
+}
+.header-menu {
+  padding: 1em;
+}
+
+/* hero page */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  background: #f0f0f0;
+}
+.hero-content {
+  padding: 1em;
+}
+
+.hero-par {
+  padding: 1em 0;
+  font-size: 18px;
+}
+.price {
+  text-align: center;
+  color: #769ccd;
+}
+.hero-button {
+  padding: 1em;
+  font-size: medium;
+  font-weight: bold;
+  color: #323644;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  align-self: center;
+}
+/* property items */
+.properties {
+  width: 100%;
+}
+.properties-title {
+  text-align: center;
+  padding-top: 1em;
+}
+.item-one,
+.item-two,
+.item-three {
+  display: flex;
+  margin: 0 1em;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.property-image {
+  padding-top: 2em;
+  width: 100%;
+  filter: drop-shadow(16px 16px 10px black);
+}
+.item-name {
+  font-size: 35px;
+  color: #323644;
+}
+/* RENTAL PROPERTIES*/
+
+.rental-properties {
+  background: #f0f0f0;
+  padding: 1em 0;
+  width: 100%;
+  color: #323644;
+}
+.rental-title {
+  text-align: center;
+}
+.rental-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  gap: 1em;
+}
+.chase-image {
+  width: 100%;
+  filter: drop-shadow(16px 16px 10px black);
+}
+.rental-price {
+  color: #769ccd;
+  text-align: center;
+}
+
+/* chat icon */
+.item-fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #8c8f96;
+  padding: 25px;
+  border-radius: 80%;
+}
+.info-sec {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  gap: 2em;
+}
+.sec-one {
+  background: #d7dce4;
+  height: 300px;
+  padding: 100px 50px;
+  font-size: larger;
+  font-weight: lighter;
+  color: #323644;
+}
+.sec-two {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  height: 300px;
+  padding: 50px 50px;
+  color: #323644;
+}
+.sec-three {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  height: 300px;
+  padding: 50px 50px;
+  color: #323644;
+  background: #d7dce4;
+}
+.sec-four {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  height: 300px;
+  padding: 50px 50px;
+  color: #323644;
+}
+.sec-two > i {
+  color: #97b4d9;
+  font-size: 40px;
+}
+.sec-three > i {
+  color: #97b4d9;
+  font-size: 40px;
+}
+.sec-four > i {
+  color: #97b4d9;
+  font-size: 40px;
+}
+.testimonials-container {
+  background-image: url(https://static.wixstatic.com/media/f61af8_8d4ef4b5b5314f8abeaad987dd13e1c4.jpg/v1/fill/w_320,h_630,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f61af8_8d4ef4b5b5314f8abeaad987dd13e1c4.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+.testimonials {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+}
+.testi-title {
+  color: aliceblue;
+  padding-bottom: 5px;
+}
+.testi {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  color: aliceblue;
+  padding: 5px;
+}
+.sender {
+  margin: 25px 0;
+  color: #769cc0;
+}
