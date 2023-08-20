@@ -6,11 +6,15 @@
 .main-page {
   font-family: Arial, Helvetica, sans-serif;
 }
-.header-container {
+.nav-container {
+}
+.nav-menu {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 1em;
+  position: fixed;
+  z-index: 1;
+  background-color: #fff;
 }
 .header-logo {
   padding-left: 1em;
@@ -31,9 +35,11 @@
   background-position: center;
   background-size: cover;
   padding: 1em;
-  gap: 2em;
+  gap: 1em;
 }
-
+.hero-title {
+  margin-top: 2em;
+}
 .hero-par {
   padding: 1em 0;
   font-size: 18px;
@@ -107,7 +113,7 @@
 }
 
 /* chat icon */
-.item-fixed {
+.chat-widget {
   position: fixed;
   bottom: 20px;
   right: 20px;
