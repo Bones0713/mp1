@@ -5,9 +5,9 @@
 }
 .main-page {
   font-family: Arial, Helvetica, sans-serif;
+  max-width: 100%;
 }
-.nav-container {
-}
+
 .nav-menu {
   display: flex;
   justify-content: space-between;
@@ -22,7 +22,33 @@
 .header-menu {
   padding: 1em;
 }
+.nav-menu-items {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
 
+  list-style-type: none;
+}
+.hamburger:hover .nav-menu-items {
+  display: flex;
+  background: #cfd8e0;
+  font-size: 16px;
+  padding: 1em;
+  position: relative;
+  top: -1em;
+  color: #5a84bb;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header-menu:hover i {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+.nav-menu-items-two {
+  display: none;
+}
 /* hero page */
 .hero-container {
   background-image: url(https://static.wixstatic.com/media/f61af8_f2b8d6008c40442a8a1f732d12b98301.png/v1/fill/w_320,h_382,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f61af8_f2b8d6008c40442a8a1f732d12b98301.png);
@@ -60,7 +86,7 @@
   align-self: center;
 }
 /* property items */
-.properties {
+.properties-container {
   width: 100%;
 }
 .properties-title {
@@ -188,6 +214,7 @@
 .testi-title {
   color: aliceblue;
   padding-bottom: 5px;
+  text-align: center;
 }
 .testi {
   display: flex;
@@ -202,7 +229,7 @@
   margin: 25px 0;
   color: #769cc0;
 }
-.footer-container {
+.footer-main {
   background: #323644;
   color: #9396a2;
   width: 100%;
@@ -237,6 +264,11 @@ textarea {
 }
 .footer-container p {
   text-align: center;
+  background-color: #323644;
+  color: #9396a2;
+  padding: 1em;
+  border-top: #9396a2;
+  font-size: larger;
 }
 .form-btn {
   color: #9396a2;
@@ -246,4 +278,117 @@ textarea {
   padding: 5px;
 
   left: 60%;
+}
+/** responsive part **/
+
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .header-menu {
+    display: none;
+  }
+  .nav-menu-items-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    list-style-type: none;
+    margin-right: 1em;
+    font-size: 12px;
+    padding-right: 2em;
+  }
+  /**hero**/
+  .hero-container {
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .hero-title {
+    font-size: 32px;
+    text-align: start;
+    margin-right: 50%;
+  }
+  .hero-par {
+    margin-right: 50%;
+  }
+  /** sale properties **/
+  .propeties-container {
+    max-width: 100%;
+    margin: 0 20%;
+  }
+  .alton,
+  .prince {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    max-height: 100%;
+  }
+  .item-disc {
+    padding-top: 2em;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-height: 100%;
+  }
+  .pierce {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  /*rental properties */
+  .rental-properties {
+    max-width: 100%;
+  }
+  .rental-menu-one,
+  .rental-menu-two {
+    display: flex;
+  }
+
+  .rental-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .info-sec {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 1em;
+  }
+  .sec-four {
+    background: #d7dce4;
+  }
+  .sec-three {
+    background-color: #fff;
+  }
+  /**Testimonial**/
+  .testimonials-container {
+    background-attachment: fixed;
+    width: 100%;
+  }
+  .comments {
+    display: flex;
+    flex-direction: column;
+  }
+  .testi p {
+    padding: 1em 5em;
+    font-size: 24px;
+    font-style: italic;
+  }
+  .sender {
+    font-size: 34px;
+  }
+  /**Footer**/
+  .footer-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    justify-content: center;
+  }
+  .footer-info,
+  .footer-form {
+    padding: 2em;
+  }
 }
