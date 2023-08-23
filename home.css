@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 .main-page {
   font-family: Arial, Helvetica, sans-serif;
@@ -33,12 +34,12 @@
 }
 .hamburger:hover .nav-menu-items {
   display: flex;
-  background: #cfd8e0;
+  background: #b4d5f1;
   font-size: 16px;
   padding: 1em;
   position: relative;
   top: -1em;
-  color: #5a84bb;
+  color: #b1cdf1;
   font-family: Arial, Helvetica, sans-serif;
 }
 .header-menu:hover i {
@@ -151,7 +152,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 1em;
+
   gap: 2em;
 }
 .sec-one {
@@ -203,6 +204,8 @@
   background-image: url(https://static.wixstatic.com/media/f61af8_8d4ef4b5b5314f8abeaad987dd13e1c4.jpg/v1/fill/w_320,h_630,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f61af8_8d4ef4b5b5314f8abeaad987dd13e1c4.jpg);
   background-size: cover;
   height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
 }
 .testimonials {
   width: 100%;
@@ -355,7 +358,6 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin: 1em;
   }
   .sec-four {
     background: #d7dce4;
@@ -369,13 +371,17 @@ textarea {
     width: 100%;
   }
   .comments {
-    display: flex;
+    width: 100%;
+    display: block;
     flex-direction: column;
+    align-items: center;
+    overflow: hidden;
   }
+
   .testi p {
-    padding: 1em 5em;
     font-size: 24px;
     font-style: italic;
+    width: 100%;
   }
   .sender {
     font-size: 34px;
@@ -390,5 +396,145 @@ textarea {
   .footer-info,
   .footer-form {
     padding: 2em;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  main {
+    width: 100%;
+  }
+  .nav-menu {
+    padding: 0 15%;
+  }
+
+  .header-menu {
+    display: none;
+  }
+  .nav-menu-items-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    list-style-type: none;
+    margin-right: 1em;
+    font-size: 12px;
+    padding-right: 2em;
+  }
+  .hero-container {
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 50px;
+    text-align: start;
+  }
+  .hero-title {
+  }
+  .hero-par {
+    font-size: 25px;
+    margin-right: 50%;
+  }
+  .price {
+    text-align: start;
+  }
+  .hero-button {
+    align-self: self-start;
+  }
+  .propeties-container {
+    max-width: 100%;
+    margin: 0 20%;
+  }
+  .alton,
+  .prince {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    max-height: 100%;
+  }
+  .item-disc {
+    padding-top: 2em;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-height: 100%;
+  }
+  .pierce {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .rental-properties {
+    max-width: 100%;
+    margin-top: 3em;
+  }
+  .rental-menu-main {
+    margin: 1em 20%;
+  }
+  .rental-menu-one,
+  .rental-menu-two {
+    display: flex;
+  }
+
+  .rental-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .info-sec-container {
+    width: 100%;
+  }
+  .info-sec {
+    padding: 1em 20%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .sec-four {
+    background: #d7dce4;
+  }
+  .sec-three {
+    background-color: #fff;
+  }
+  .testimonials-container {
+    background-attachment: fixed;
+    width: 100%;
+  }
+  .testimonials {
+    width: 100%;
+  }
+  .comments {
+    font-family: "";
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    width: 100%;
+  }
+
+  .testi p {
+    font-size: 24px;
+    font-style: italic;
+    width: 100%;
+  }
+  .sender {
+    font-size: 34px;
+  }
+  .testi-title {
+    padding-top: 3em;
+  }
+
+  .footer-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 20%;
+  }
+  .footer-info,
+  .footer-form {
+    padding: 2em;
+  }
+  .form-btn {
+    position: relative;
+    left: 67%;
   }
 }
